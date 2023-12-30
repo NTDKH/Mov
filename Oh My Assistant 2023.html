@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<html lang="km">    
+<head>
+  <head>
+    <link href='https://raw.githack.com/Neasreyka/Admin-logo/main/jw%202.0.8.css' rel='stylesheet'/> 
+	<title> </title>
+	</head>
+<body>
+  <script src='https://cdn.jwplayer.com/libraries/IDzF9Zmk.js' type='text/javascript'></script>
+  <style>
+  #player {
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .jwplayer .jw-rightclick .jw-rightclick-list {
+        border-radius: 1px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: none;
+    }
+</style>
+	<!-- Player -->
+<div id="player"></div>
+<script>
+  const playerInstance = jwplayer("player").setup({
+  controls: true,
+  sharing: false,
+  displaytitle: false,
+  displaydescription: true,
+  abouttext: "Buy Me a Coffee",
+  aboutlink: "@mr_ron168",
+
+  skin: {
+    name: "netflix"
+  },
+  logo: {
+    file:
+      "https://blogger.googleusercontent.com/img/a/AVvXsEjvSrgwjAWkqqX0u2zsBVfuuplsvWqZw6NOqO6HU3Cs_nx9OXXCxtCinSFKzbSIxHGKj6jp4Rzan6jFEazN8fuoXfos7SCMoPIh06KG1EsgdmlmZ5iwu0HNRaJ_as2sIGLGXeRptVz_DP9miQg_c_-0vebEEnxVujotIHcEDG4Gv-fJUxkJj2uYhlMvWLyh=s150 ",
+    link: " "
+  },
+  captions: {
+    color: "#FFF",
+    fontSize: 12,
+    backgroundOpacity: 60,
+    edgeStyle: "uniform"
+  },
+
+  playlist: [
+    {
+      title: " ",
+      description: " ",
+      image: "#",
+      sources: [
+      {
+          file:
+            "https://cdn.dzen.ru/vod/converted-video/vod-content/23/61/44/52/35/54/12/25/13/6/14aa026e-7649-4286-8886-73d9efac3047/kaltura/desc_c4075e87a95c1f3d5527cfec05ef0a8a/1084360125745485615/ysign1=eb01118346ff75cc1ca606ba4a1e5c251f1b426473f8ff327b5bce2620f3c87b,abcID=967,from=zen,pfx,sfx,ts=659da7a1/manifest.mpd?vsid=bd968f0d499468e78a4bd85f003afed03d2a724e0c64xZWPx1234x1703966887&clid=495&dzenuid=&slots=925788%2C0%2C72%3B931635%2C0%2C96%3B933783%2C0%2C26%3B938649%2C0%2C67&from=zen&partner-id=2085134&video-category-id=0&imp-id=undefined&gzip=1&reqid=875131174.55.1703966881135.11936&video-content-id=vL1eoB8prDA8&partner-stat-id=0&duration=6895&puid=10000000778590984&from_block=site_desktop&strongest_id=10000000778590984&item_id=-1929109934154728790&stream_block=video_related%3Avideo_page&rid=875131174.55.1703966881135.11936&ppi=site_desktop%3Adzen%3Avideo_site_desktop&frontend_vh_reqid=875131174.55.1703966881135.11936&zen-content-id=vL1eoB8prDA8&video-content-duration=6875&content_id=vL1eoB8prDA8&dzen-exp-ids=92...",
+          label: "Auto",
+          default: true
+        
+        }],
+        captions: [
+        {file:"https://res.cloudinary.com/dkymshypa/raw/upload/v1703966713/Oh%20My%20Assistant%202023/Khmer_qcyjfz.srt",
+          label: "Khmer",
+          kind: "captions",
+          default: true
+
+        },
+        {
+        file:"https://res.cloudinary.com/dkymshypa/raw/upload/v1703966690/Oh%20My%20Assistant%202023/English_ehjaqr.srt",
+          label: "English",
+          kind: "captions",
+        },
+        {
+        file:"https://res.cloudinary.com/dkymshypa/raw/upload/v1703966712/Oh%20My%20Assistant%202023/Italian_uitxzo.srt",
+          label: "Italian",
+          kind: "captions",
+        },
+        {
+        file:"https://res.cloudinary.com/dkymshypa/raw/upload/v1703966713/Oh%20My%20Assistant%202023/Indonesia_nxwp1a.srt",
+          label: "Indonesia",
+          kind: "captions",
+        },
+        {
+        file:"https://res.cloudinary.com/dkymshypa/raw/upload/v1703966714/Oh%20My%20Assistant%202023/Thai_zua8ji.srt",
+          label: "Thai",  
+
+          kind: "captions",
+        },
+       
+        {
+        file:"https://res.cloudinary.com/dkymshypa/raw/upload/v1703966661/Oh%20My%20Assistant%202023/Arabic_htisfo.srt",
+          label: "Arabic",
+          kind: "captions",
+        },
+        {
+        file:"https://res.cloudinary.com/dkymshypa/raw/upload/v1703966719/Oh%20My%20Assistant%202023/Vietnam_sgzpqb.srt",
+          label: "Vietnam",
+          kind: "captions",
+        },
+        
+        {
+        file:"https://res.cloudinary.com/dkymshypa/raw/upload/v1703966713/Oh%20My%20Assistant%202023/Malay_olqyth.srt",
+          label: "Malay",
+          kind: "captions",
+        }],
+    }
+  ],
+  advertising: {
+    client: "vast",
+  }
+});
+
+playerInstance.on("ready", function () {
+  const buttonId = "download-video-button";
+  const iconPath =
+    "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0Ij48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZD0iTTMgMTloMTh2Mkgzdi0yem0xMC01LjgyOEwxOS4wNzEgNy4xbDEuNDE0IDEuNDE0TDEyIDE3IDMuNTE1IDguNTE1IDQuOTI5IDcuMSAxMSAxMy4xN1YyaDJ2MTEuMTcyeiIgZmlsbD0icmdiYSgyNDcsMjQ3LDI0NywxKSIvPjwvc3ZnPg==";
+  const tooltipText = "Download";
+  // This function is executed when the button is clicked
+  function buttonClickAction() {
+    const playlistItem = playerInstance.getPlaylistItem();
+    const anchor = document.createElement("a");
+    const fileUrl = playlistItem.file;
+    anchor.setAttribute("href", fileUrl);
+    const downloadName = playlistItem.file.split("/").pop();
+    anchor.setAttribute("download", downloadName);
+    anchor.style.display = "none";
+    document.body.appendChild(anchor);
+    anchor.click();
+    document.body.removeChild(anchor);
+  }
+
+  // Move the timeslider in-line with other controls
+  const playerContainer = playerInstance.getContainer();
+  const buttonContainer = playerContainer.querySelector(".jw-button-container");
+  const spacer = buttonContainer.querySelector(".jw-spacer");
+  const timeSlider = playerContainer.querySelector(".jw-slider-time");
+  // Forward 10 seconds
+  const rewindContainer = playerContainer.querySelector(
+    ".jw-display-icon-rewind"
+  );
+  const forwardContainer = rewindContainer.cloneNode(true);
+  const forwardDisplayButton = forwardContainer.querySelector(
+    ".jw-icon-rewind"
+  );
+  forwardDisplayButton.style.transform = "scaleX(-1)";
+  forwardDisplayButton.ariaLabel = "Forward 10 Seconds";
+  const nextContainer = playerContainer.querySelector(".jw-display-icon-next");  nextContainer.parentNode.insertBefore(forwardContainer, nextContainer);
+  // control bar icon
+  playerContainer.querySelector(".jw-display-icon-next").style.display = "none"; // hide next button
+  const rewindControlBarButton = buttonContainer.querySelector(
+    ".jw-icon-rewind"
+  );
+  const forwardControlBarButton = rewindControlBarButton.cloneNode(true);
+  forwardControlBarButton.style.transform = "scaleX(-1)";
+  forwardControlBarButton.ariaLabel = "Forward 10 Seconds";  rewindControlBarButton.parentNode.insertBefore(
+    forwardControlBarButton,    rewindControlBarButton.nextElementSibling
+  );
+  // add onclick handlers
+  [forwardDisplayButton, forwardControlBarButton].forEach((button) => {
+    button.onclick = () => {     playerInstance.seek(playerInstance.getPosition() + 10);
+    };
+  });
+});
+</script>
+</body>
+</html>
